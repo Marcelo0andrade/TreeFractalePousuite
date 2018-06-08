@@ -43,16 +43,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblNomVersion = new System.Windows.Forms.Label();
             this.Fenetre = new System.Windows.Forms.Timer(this.components);
-            this.wbbMusic = new System.Windows.Forms.WebBrowser();
             this.rbtnHiver = new System.Windows.Forms.RadioButton();
             this.rbtnAutomne = new System.Windows.Forms.RadioButton();
             this.rbtnPrintemps = new System.Windows.Forms.RadioButton();
             this.rbtnEte = new System.Windows.Forms.RadioButton();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.nudAngleB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLongueurB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAngleA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLongueurA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNiveau)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblAngleA
@@ -270,15 +271,6 @@
             this.Fenetre.Interval = 8;
             this.Fenetre.Tick += new System.EventHandler(this.Fenetre_Tick);
             // 
-            // wbbMusic
-            // 
-            this.wbbMusic.Location = new System.Drawing.Point(12, 123);
-            this.wbbMusic.MinimumSize = new System.Drawing.Size(20, 20);
-            this.wbbMusic.Name = "wbbMusic";
-            this.wbbMusic.Size = new System.Drawing.Size(210, 145);
-            this.wbbMusic.TabIndex = 18;
-            this.wbbMusic.Visible = false;
-            // 
             // rbtnHiver
             // 
             this.rbtnHiver.AutoSize = true;
@@ -329,6 +321,16 @@
             this.rbtnEte.Text = "Été";
             this.rbtnEte.UseVisualStyleBackColor = false;
             // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(12, 122);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(222, 64);
+            this.axWindowsMediaPlayer1.TabIndex = 19;
+            this.axWindowsMediaPlayer1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -336,11 +338,11 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(842, 595);
+            this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.rbtnEte);
             this.Controls.Add(this.rbtnPrintemps);
             this.Controls.Add(this.rbtnAutomne);
             this.Controls.Add(this.rbtnHiver);
-            this.Controls.Add(this.wbbMusic);
             this.Controls.Add(this.lblNomVersion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nudNiveau);
@@ -364,6 +366,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudAngleA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLongueurA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNiveau)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,11 +386,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblNomVersion;
         private System.Windows.Forms.Timer Fenetre;
-        private System.Windows.Forms.WebBrowser wbbMusic;
         private System.Windows.Forms.RadioButton rbtnHiver;
         private System.Windows.Forms.RadioButton rbtnAutomne;
         private System.Windows.Forms.RadioButton rbtnPrintemps;
         private System.Windows.Forms.RadioButton rbtnEte;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }
 

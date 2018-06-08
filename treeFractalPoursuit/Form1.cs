@@ -49,9 +49,8 @@ namespace treeFractalPoursuit
             lblNomVersion.Left = ClientRectangle.Width - 143;
             lblNomVersion.Top = ClientRectangle.Height - 25;
 
-
-            //Mettre une musique en fond
-            wbbMusic.Navigate("https://www.youtube.com/watch?v=c9pQYOGIWM8");
+            //Volume de la musique de fond
+            axWindowsMediaPlayer1.settings.volume = 50;
 
         }
 
