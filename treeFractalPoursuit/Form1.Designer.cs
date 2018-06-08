@@ -133,7 +133,7 @@
             131072});
             this.nudLongueurB.Location = new System.Drawing.Point(577, 38);
             this.nudLongueurB.Maximum = new decimal(new int[] {
-            9,
+            8,
             0,
             0,
             65536});
@@ -190,7 +190,7 @@
             131072});
             this.nudLongueurA.Location = new System.Drawing.Point(335, 38);
             this.nudLongueurA.Maximum = new decimal(new int[] {
-            9,
+            8,
             0,
             0,
             65536});

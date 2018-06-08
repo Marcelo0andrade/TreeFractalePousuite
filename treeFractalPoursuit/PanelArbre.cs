@@ -143,6 +143,7 @@ namespace treeFractalPoursuit
             AutoScroll = true;
             Width = largeur;
             Height = hauteur;
+            
         }
 
         private void Redessiner(object sender, PaintEventArgs e)
@@ -150,6 +151,7 @@ namespace treeFractalPoursuit
             
             float fLongueur = Height/4;
             e.Graphics.TranslateTransform(Width / 2, Height);
+            
             //Dessiner les branches
             DessinerBranche(e.Graphics, fLongueur);
         }

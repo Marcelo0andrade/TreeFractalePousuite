@@ -48,6 +48,17 @@ namespace treeFractalPoursuit
 
         private void btnGenerer_Click(object sender, EventArgs e)
         {
+            if (nudLongueurA.Value >= 0.70m && nudLongueurB.Value >= 0.70m &&nudNiveau.Value>=18)
+            {
+                nudLongueurA.Value = 0.70m;
+                nudLongueurB.Value = 0.70m;
+                nudNiveau.Value = 18m;
+            }
+            else if (nudLongueurA.Value >= 0.80m && nudLongueurB.Value >= 0.80m)
+            {
+                nudLongueurA.Value = 0.79m;
+                nudLongueurB.Value = 0.79m;
+            }
             this.Focus();
             arbre.Hiver = rbtnHiver.Checked;
             arbre.Ete = rbtnEte.Checked;
