@@ -59,7 +59,7 @@
             // 
             this.lblAngleA.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblAngleA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblAngleA.Location = new System.Drawing.Point(470, 23);
+            this.lblAngleA.Location = new System.Drawing.Point(229, 22);
             this.lblAngleA.Name = "lblAngleA";
             this.lblAngleA.Size = new System.Drawing.Size(100, 13);
             this.lblAngleA.TabIndex = 3;
@@ -69,7 +69,7 @@
             // 
             this.lblAngleB.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblAngleB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblAngleB.Location = new System.Drawing.Point(229, 23);
+            this.lblAngleB.Location = new System.Drawing.Point(471, 22);
             this.lblAngleB.Name = "lblAngleB";
             this.lblAngleB.Size = new System.Drawing.Size(100, 13);
             this.lblAngleB.TabIndex = 4;
@@ -79,7 +79,7 @@
             // 
             this.lblprofondeurA.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblprofondeurA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblprofondeurA.Location = new System.Drawing.Point(576, 24);
+            this.lblprofondeurA.Location = new System.Drawing.Point(335, 23);
             this.lblprofondeurA.Name = "lblprofondeurA";
             this.lblprofondeurA.Size = new System.Drawing.Size(129, 13);
             this.lblprofondeurA.TabIndex = 5;
@@ -89,7 +89,7 @@
             // 
             this.lblProfondeurB.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblProfondeurB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblProfondeurB.Location = new System.Drawing.Point(335, 23);
+            this.lblProfondeurB.Location = new System.Drawing.Point(577, 22);
             this.lblProfondeurB.Name = "lblProfondeurB";
             this.lblProfondeurB.Size = new System.Drawing.Size(129, 13);
             this.lblProfondeurB.TabIndex = 8;
@@ -102,7 +102,7 @@
             0,
             0,
             0});
-            this.nudAngleB.Location = new System.Drawing.Point(229, 39);
+            this.nudAngleB.Location = new System.Drawing.Point(471, 38);
             this.nudAngleB.Maximum = new decimal(new int[] {
             180,
             0,
@@ -115,7 +115,7 @@
             -2147483648});
             this.nudAngleB.Name = "nudAngleB";
             this.nudAngleB.Size = new System.Drawing.Size(100, 20);
-            this.nudAngleB.TabIndex = 10;
+            this.nudAngleB.TabIndex = 2;
             this.nudAngleB.Value = new decimal(new int[] {
             30,
             0,
@@ -131,7 +131,7 @@
             0,
             0,
             131072});
-            this.nudLongueurB.Location = new System.Drawing.Point(335, 39);
+            this.nudLongueurB.Location = new System.Drawing.Point(577, 38);
             this.nudLongueurB.Maximum = new decimal(new int[] {
             9,
             0,
@@ -144,7 +144,7 @@
             65536});
             this.nudLongueurB.Name = "nudLongueurB";
             this.nudLongueurB.Size = new System.Drawing.Size(129, 20);
-            this.nudLongueurB.TabIndex = 11;
+            this.nudLongueurB.TabIndex = 3;
             this.nudLongueurB.Value = new decimal(new int[] {
             67,
             0,
@@ -159,7 +159,7 @@
             0,
             0,
             0});
-            this.nudAngleA.Location = new System.Drawing.Point(470, 39);
+            this.nudAngleA.Location = new System.Drawing.Point(229, 38);
             this.nudAngleA.Maximum = new decimal(new int[] {
             180,
             0,
@@ -172,7 +172,7 @@
             -2147483648});
             this.nudAngleA.Name = "nudAngleA";
             this.nudAngleA.Size = new System.Drawing.Size(100, 20);
-            this.nudAngleA.TabIndex = 12;
+            this.nudAngleA.TabIndex = 0;
             this.nudAngleA.Value = new decimal(new int[] {
             30,
             0,
@@ -188,7 +188,7 @@
             0,
             0,
             131072});
-            this.nudLongueurA.Location = new System.Drawing.Point(576, 39);
+            this.nudLongueurA.Location = new System.Drawing.Point(335, 38);
             this.nudLongueurA.Maximum = new decimal(new int[] {
             9,
             0,
@@ -201,7 +201,7 @@
             65536});
             this.nudLongueurA.Name = "nudLongueurA";
             this.nudLongueurA.Size = new System.Drawing.Size(129, 20);
-            this.nudLongueurA.TabIndex = 13;
+            this.nudLongueurA.TabIndex = 1;
             this.nudLongueurA.Value = new decimal(new int[] {
             67,
             0,
@@ -215,7 +215,7 @@
             this.btnGenerer.Location = new System.Drawing.Point(12, 12);
             this.btnGenerer.Name = "btnGenerer";
             this.btnGenerer.Size = new System.Drawing.Size(210, 70);
-            this.btnGenerer.TabIndex = 14;
+            this.btnGenerer.TabIndex = 9;
             this.btnGenerer.Text = "Générer";
             this.btnGenerer.UseVisualStyleBackColor = true;
             this.btnGenerer.Click += new System.EventHandler(this.btnGenerer_Click);
@@ -235,7 +235,7 @@
             0});
             this.nudNiveau.Name = "nudNiveau";
             this.nudNiveau.Size = new System.Drawing.Size(120, 20);
-            this.nudNiveau.TabIndex = 15;
+            this.nudNiveau.TabIndex = 4;
             this.nudNiveau.Value = new decimal(new int[] {
             4,
             0,
@@ -287,7 +287,7 @@
             this.rbtnHiver.Location = new System.Drawing.Point(426, 65);
             this.rbtnHiver.Name = "rbtnHiver";
             this.rbtnHiver.Size = new System.Drawing.Size(50, 17);
-            this.rbtnHiver.TabIndex = 19;
+            this.rbtnHiver.TabIndex = 8;
             this.rbtnHiver.Text = "Hiver";
             this.rbtnHiver.UseVisualStyleBackColor = false;
             // 
@@ -300,7 +300,7 @@
             this.rbtnAutomne.Location = new System.Drawing.Point(353, 65);
             this.rbtnAutomne.Name = "rbtnAutomne";
             this.rbtnAutomne.Size = new System.Drawing.Size(67, 17);
-            this.rbtnAutomne.TabIndex = 20;
+            this.rbtnAutomne.TabIndex = 7;
             this.rbtnAutomne.TabStop = true;
             this.rbtnAutomne.Text = "Automne";
             this.rbtnAutomne.UseVisualStyleBackColor = false;
@@ -313,7 +313,7 @@
             this.rbtnPrintemps.Location = new System.Drawing.Point(229, 65);
             this.rbtnPrintemps.Name = "rbtnPrintemps";
             this.rbtnPrintemps.Size = new System.Drawing.Size(71, 17);
-            this.rbtnPrintemps.TabIndex = 21;
+            this.rbtnPrintemps.TabIndex = 5;
             this.rbtnPrintemps.Text = "Printemps";
             this.rbtnPrintemps.UseVisualStyleBackColor = false;
             // 
@@ -325,7 +325,7 @@
             this.rbtnEte.Location = new System.Drawing.Point(306, 65);
             this.rbtnEte.Name = "rbtnEte";
             this.rbtnEte.Size = new System.Drawing.Size(41, 17);
-            this.rbtnEte.TabIndex = 22;
+            this.rbtnEte.TabIndex = 6;
             this.rbtnEte.Text = "Été";
             this.rbtnEte.UseVisualStyleBackColor = false;
             // 
