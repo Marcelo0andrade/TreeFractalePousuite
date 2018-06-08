@@ -237,7 +237,7 @@
             this.nudNiveau.Size = new System.Drawing.Size(120, 20);
             this.nudNiveau.TabIndex = 4;
             this.nudNiveau.Value = new decimal(new int[] {
-            4,
+            20,
             0,
             0,
             0});

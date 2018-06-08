@@ -190,7 +190,7 @@ namespace treeFractalPoursuit
             
             //Faire un dégradé
             Random rnd = new Random();
-            int iX = rnd.Next(70, ValeurMaxDegrade);
+            int iX = rnd.Next(1, ValeurMaxDegrade);
             if (Hiver)
             {
                 Rouge = 0;
@@ -199,8 +199,8 @@ namespace treeFractalPoursuit
             }
             else if (Ete)
             {
-                Rouge = 0;
-                Vert = 255;
+                Rouge = 10;
+                Vert = 200;
                 Bleu = iX * 165 / ValeurMaxDegrade;
                 
             }
