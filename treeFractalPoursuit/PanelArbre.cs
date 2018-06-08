@@ -139,6 +139,7 @@ namespace treeFractalPoursuit
         public PanelArbre(int largeur, int hauteur) : base()
         {
             this.Paint += new PaintEventHandler(Redessiner);
+            //Valeur par défaut
             BackColor = SystemColors.ControlDarkDark;
             AutoScroll = true;
             Width = largeur;
@@ -148,7 +149,7 @@ namespace treeFractalPoursuit
 
         private void Redessiner(object sender, PaintEventArgs e)
         {
-            
+            //hauteur de branche
             float fLongueur = Height/4;
             e.Graphics.TranslateTransform(Width / 2, Height);
             

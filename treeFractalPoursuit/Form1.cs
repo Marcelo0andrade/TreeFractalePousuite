@@ -8,7 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ *  Projet: TreeFractalPoursuit
+ *  Auteur: Marcelo Andrade
+ *  Date: 18.05.2018  
+ *  Classe: 1M4I1C
+ *  Version: Microsoft Visual studio pro 2017
+ *  OS: Win 10 Pro
+ *  But: Générer un arbre fractale
+*/
 namespace treeFractalPoursuit
 {
     public partial class Form1 : Form
@@ -27,7 +35,7 @@ namespace treeFractalPoursuit
 
             //Classe qui gère l'interface graphique et l'algorithme de l'arbre
             Controls.Add(arbre);
-
+            //envoyer les valeurs à la classe
             arbre.AngleA = (float)nudAngleA.Value;
             arbre.AngleB = (float)nudAngleB.Value;
             arbre.LongueurBrancheA = (float)nudLongueurA.Value;
@@ -37,6 +45,7 @@ namespace treeFractalPoursuit
             arbre.Ete = rbtnEte.Checked;
             arbre.Printemps = rbtnPrintemps.Checked;
             arbre.Automne = rbtnAutomne.Checked;
+            //Gérer le label de version
             lblNomVersion.Left = ClientRectangle.Width - 143;
             lblNomVersion.Top = ClientRectangle.Height - 25;
 
@@ -48,18 +57,14 @@ namespace treeFractalPoursuit
 
         private void btnGenerer_Click(object sender, EventArgs e)
         {
+            //Mettre une sorte de plafond à cause du nombre de calcules à éffectuer
             if (nudLongueurA.Value >= 0.70m && nudLongueurB.Value >= 0.70m &&nudNiveau.Value>=18)
             {
                 nudLongueurA.Value = 0.70m;
                 nudLongueurB.Value = 0.70m;
                 nudNiveau.Value = 18m;
             }
-            else if (nudLongueurA.Value >= 0.80m && nudLongueurB.Value >= 0.80m)
-            {
-                nudLongueurA.Value = 0.79m;
-                nudLongueurB.Value = 0.79m;
-            }
-            this.Focus();
+
             arbre.Hiver = rbtnHiver.Checked;
             arbre.Ete = rbtnEte.Checked;
             arbre.Printemps = rbtnPrintemps.Checked;
@@ -67,7 +72,7 @@ namespace treeFractalPoursuit
 
             Redimentionner();
         }
-        //Donne le focus pour pouvoir faire Enter directement
+        //Donne le focus pour pouvoir faire Enter directement dans le bouton "générer"
         private void nudAngleB_ValueChanged(object sender, EventArgs e)
         {
             btnGenerer.Focus();
