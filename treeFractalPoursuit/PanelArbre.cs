@@ -158,7 +158,7 @@ namespace treeFractalPoursuit
         {
             Couleur();
             //Tourner,aller et dessiner
-            if (fLongueur > NiveauFeuille)
+            if (fLongueur > 22 - NiveauFeuille)
             {
               
                 Pen pen = new Pen(LinDeg, 8);
