@@ -12,14 +12,8 @@ namespace treeFractalPoursuit
 {
     public class PanelArbre : Panel
     {
-        private float _longeurBrancheA, _longeurBrancheB;
-        private float _angleA;
-        private float _angleB;
-        private float _NiveauFeuille;
-        private bool _Hiver;
-        private bool _Ete;
-        private bool _Automne;
-        private bool _Printemps; 
+        private float _longeurBrancheA, _longeurBrancheB, _angleA ,_angleB, _NiveauFeuille;
+        private bool _Hiver,_Ete,_Automne,_Printemps; 
         LinearGradientBrush LinDeg;
         Random rdn = new Random();
         public bool Hiver
