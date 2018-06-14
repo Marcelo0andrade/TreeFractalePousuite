@@ -15,7 +15,7 @@ namespace treeFractalPoursuit
         private float _longeurBrancheA, _longeurBrancheB, _angleA ,_angleB, _NiveauFeuille;
         private bool _Hiver,_Ete,_Automne,_Printemps; 
         LinearGradientBrush LinDeg;
-        Random rdn = new Random();
+        Random rnd = new Random();
         public bool Hiver
         {get{return _Hiver;}set{_Hiver = value;Invalidate();}}
         public bool Ete
@@ -35,26 +35,34 @@ namespace treeFractalPoursuit
         public float NiveauFeuille
         {get{return _NiveauFeuille;}set{_NiveauFeuille = value;Invalidate();}}
 
+        /// <summary>
+        /// Valeurs par défaut
+        /// </summary>
         public PanelArbre(int largeur, int hauteur) : base()
         {
             this.Paint += new PaintEventHandler(Redessiner);
-            //Valeur par défaut
+            
             BackColor = SystemColors.ControlDarkDark;
             AutoScroll = true;
             Width = largeur;
             Height = hauteur;  
         }
-
+        /// <summary>
+        /// Recommence le dessin
+        /// </summary>
         private void Redessiner(object sender, PaintEventArgs e)
         {
             //hauteur de branche
             float fLongueur = Height/4;
             e.Graphics.TranslateTransform(Width / 2, Height);
             
-            //Dessiner les branches
+           
             DessinerBranche(e.Graphics, fLongueur);
         }
 
+        /// <summary>
+        ///  Dessiner les branches
+        /// </summary>
         public void DessinerBranche(Graphics gr, float fLongueur)
         {
             Couleur();
@@ -80,23 +88,30 @@ namespace treeFractalPoursuit
                 DessinerBranche(gr,fLongueur * LongueurBrancheB);
             }
         }
-        //Random des longueurs des branches
+
+        /// <summary>
+        /// Random des longueurs des branches
+        /// </summary>
         public float randomsLongueur()
         {
             double Longueur=0;
             
-            Longueur = rdn.Next(10, 80);
+            Longueur = rnd.Next(10, 80);
             Longueur *= (double)0.01;
             return (float)Longueur;
         }
-        //Random des angles des branches
+        /// <summary>
+        /// Random des angles des branches
+        /// </summary>
         public float randomsAngles()
         {
             int Angle=0;
-            Angle=rdn.Next(-3000,3000);
+            Angle=rnd.Next(-3000,3000);
             return Angle;
         }
-        //Random des couleurs des branches
+        /// <summary>
+        /// Random des couleurs des branches
+        /// </summary>
         private void Couleur()
         {
             int ValeurMaxDegrade = 255;
@@ -105,7 +120,6 @@ namespace treeFractalPoursuit
             int Bleu;
             
             //Faire un dégradé
-            Random rnd = new Random();
             int iX = rnd.Next(1, ValeurMaxDegrade);
             if (Hiver)
             {
