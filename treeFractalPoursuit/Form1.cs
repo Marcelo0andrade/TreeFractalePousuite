@@ -52,22 +52,17 @@ namespace treeFractalPoursuit
             axWindowsMediaPlayer1.settings.volume = 50;
 
         }
-
+        /// <summary>
+        /// Ajoute un plafond et renvoie vers Redimentionner()
+        /// </summary>
         private void btnGenerer_Click(object sender, EventArgs e)
         {
-            //Mettre une sorte de plafond à cause du nombre de calcules à éffectuer
             if (nudLongueurA.Value >= 0.70m && nudLongueurB.Value >= 0.70m &&nudNiveau.Value>=18)
             {
                 nudLongueurA.Value = 0.70m;
                 nudLongueurB.Value = 0.70m;
                 nudNiveau.Value = 18m;
             }
-
-            arbre.Hiver = rbtnHiver.Checked;
-            arbre.Ete = rbtnEte.Checked;
-            arbre.Printemps = rbtnPrintemps.Checked;
-            arbre.Automne = rbtnAutomne.Checked;
-
             btnAleatoire.Enabled = false;
             Redimentionner();
             btnAleatoire.Enabled = true;
@@ -92,25 +87,34 @@ namespace treeFractalPoursuit
         {
             btnGenerer.Focus();
         }
-
+        /// <summary>
+        /// Gérer la fenêtre
+        /// </summary>
         private void Fenetre_Tick(object sender, EventArgs e)
         {
-            //Gérer la fenêtre
             lblNomVersion.Left = ClientRectangle.Width - 148;
             lblNomVersion.Top = ClientRectangle.Height - 25;
             arbre.Width = ClientRectangle.Width; 
             arbre.Height= ClientRectangle.Height;
         }
-        //Gérer le fait de Redessiner après avoir redimentionner
+        /// <summary>
+        /// Gérer le fait de Redessiner après avoir redimentionner
+        /// </summary>
         private void Redimentionner()
         {
+            arbre.Hiver = rbtnHiver.Checked;
+            arbre.Ete = rbtnEte.Checked;
+            arbre.Printemps = rbtnPrintemps.Checked;
+            arbre.Automne = rbtnAutomne.Checked;
             arbre.LongueurBrancheB = (float)nudLongueurB.Value;
             arbre.LongueurBrancheA = (float)nudLongueurA.Value;
             arbre.AngleB = (float)nudAngleB.Value;
             arbre.AngleA = (float)nudAngleA.Value;
             arbre.NiveauFeuille = (float)nudNiveau.Value;
         }
-
+        /// <summary>
+        /// Ajoute l'aléatoire
+        /// </summary>
         private void btnAleatoire_Click(object sender, EventArgs e)
         {
             nudAngleA.Value = Convert.ToDecimal(arbre.randomsAngles());
