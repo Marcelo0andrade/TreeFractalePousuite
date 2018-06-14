@@ -35,17 +35,16 @@ namespace treeFractalPoursuit
 
             //Classe qui gère l'interface graphique et l'algorithme de l'arbre
             Controls.Add(arbre);
-            //envoyer les valeurs à la classe
+            //envoyer les valeurs à la classe                                                                                                                                                                                                                                                                       
             arbre.AngleA = (float)nudAngleA.Value;
-            arbre.AngleB = (float)nudAngleB.Value;
-            arbre.LongueurBrancheA = (float)nudLongueurA.Value;
-            arbre.LongueurBrancheB = (float)nudLongueurB.Value;
-            arbre.NiveauFeuille = (float)nudNiveau.Value;
-            arbre.Hiver = rbtnHiver.Checked;
-            arbre.Ete = rbtnEte.Checked;
-            arbre.Printemps = rbtnPrintemps.Checked;
+            arbre.AngleB = (float)nudAngleB.Value;                                                                                                                                                                                                                     
+            arbre.LongueurBrancheB = (float)nudLongueurB.Value;                                                                                                                                                                                                                 
+            arbre.NiveauFeuille = (float)nudNiveau.Value;                                                                                                                                                                                                                    
+            arbre.Hiver = rbtnHiver.Checked;                                                                                                                                                                                                                                   
+            arbre.Ete = rbtnEte.Checked;                                                                                                                                                                                                                                      
+            arbre.Printemps = rbtnPrintemps.Checked;                                                                                                                                                                                                                   
             arbre.Automne = rbtnAutomne.Checked;
-            //Gérer le label de version
+            //Gérer le label de version                                                                                                                                                                                                                                                                  
             lblNomVersion.Left = ClientRectangle.Width - 143;
             lblNomVersion.Top = ClientRectangle.Height - 25;
 
@@ -77,19 +76,16 @@ namespace treeFractalPoursuit
         private void nudAngleB_ValueChanged(object sender, EventArgs e)
         {
             btnGenerer.Focus();
-
         }
 
         private void nudLongueurB_ValueChanged(object sender, EventArgs e)
         {
             btnGenerer.Focus();
-
         }
 
         private void nudAngleA_ValueChanged(object sender, EventArgs e)
         {
             btnGenerer.Focus();
-
         }
 
         private void nudLongueurA_ValueChanged(object sender, EventArgs e)
@@ -127,4 +123,30 @@ namespace treeFractalPoursuit
         }
     }
 }
-   
+//                                             .         ;  
+//                .              .              ;%     ;;   
+//                  ,           ,                :;%  %;   
+//                   :         ;                   :;%;'     .,   
+//          ,.        %;     %;            ;        %;'    ,;
+//            ;       ;%;  %%;        ,     %;    ;%;    ,%'
+//             %;       %;%;      ,  ;       %;  ;%;   ,%;' 
+//              ;%;      %;        ;%;        % ;%;  ,%;'
+//               `%;.     ;%;     %;'         `;%%;.%;'
+//                `:;%.    ;%%. %@;        %; ;@%;%'
+//                   `:%;.  :;bd%;          %;@%;'
+//                     `@%:.  :;%.         ;@@%;'   
+//                       `@%.  `;@%.      ;@@%;         
+//                         `@%%. `@%%    ;@@%;        
+//                           ;@%. :@%%  %@@%;       
+//                             %@bd%%%bd%%:;     
+//                               #@%%%%%:;;
+//                               %@@%%%::;
+//                               %@@@%(o);  . '         
+//                               %@@@o%;:(.,'         
+//                           `.. %@@@o%::;         
+//                              `)@@@o%::;         
+//                               %@@(o)::;        
+//                              .%@@@@%::;         
+//                              ;%@@@@%::;.          
+//                             ;%@@@@%%:;;;. 
+//                         ...;%@@@@@%%:;;;;,..  

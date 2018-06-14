@@ -17,118 +17,23 @@ namespace treeFractalPoursuit
         LinearGradientBrush LinDeg;
         Random rdn = new Random();
         public bool Hiver
-        {
-            get
-            {
-                return _Hiver;
-            }
-            set
-            {
-                _Hiver = value;
-                Invalidate();
-            }
-        }
+        {get{return _Hiver;}set{_Hiver = value;Invalidate();}}
         public bool Ete
-        {
-            get
-            {
-                return _Ete;
-            }
-            set
-            {
-                _Ete = value;
-                Invalidate();
-            }
-        }
+        {get{return _Ete;}set{_Ete = value;Invalidate();}}
         public bool Automne
-        {
-            get
-            {
-                return _Automne;
-            }
-            set
-            {
-                _Automne = value;
-                Invalidate();
-            }
-        }
+        {get{return _Automne;}set{_Automne = value;Invalidate();}}
         public bool Printemps
-        {
-            get
-            {
-                return _Printemps;
-            }
-            set
-            {
-                _Printemps = value;
-                Invalidate();
-            }
-        }
+        {get{return _Printemps;}set{_Printemps = value;Invalidate();}}
         public float AngleA
-        {
-            get
-            {
-                return _angleA;
-            }
-            set
-            {
-                _angleA = value;
-                Invalidate();
-            }
-        }
-
-
+        {get{return _angleA;}set{_angleA = value;Invalidate();}}
         public float AngleB
-        {
-            get
-            {
-                return _angleB;
-            }
-            set
-            {
-                _angleB = value;
-                Invalidate();
-            }
-        }
+        {get{return _angleB;}set{_angleB = value;Invalidate();}}
         public float LongueurBrancheA
-        {
-            get
-            {
-                return _longeurBrancheA;
-            }
-            set
-            {
-
-                _longeurBrancheA = value;
-                Invalidate();
-            }
-        }
+        {get{return _longeurBrancheA;}set{_longeurBrancheA = value;Invalidate();}}
         public float LongueurBrancheB
-        {
-            get
-            {
-                return _longeurBrancheB;
-            }
-            set
-            {
-                _longeurBrancheB = value;
-                Invalidate();
-            }
-        }
+        {get{return _longeurBrancheB;}set{ _longeurBrancheB = value; Invalidate();}}
         public float NiveauFeuille
-        {
-            get
-            {
-                return _NiveauFeuille;
-
-            }
-            set
-            {
-                _NiveauFeuille = value;
-                Invalidate();
-
-            }
-        }
+        {get{return _NiveauFeuille;}set{_NiveauFeuille = value;Invalidate();}}
 
         public PanelArbre(int largeur, int hauteur) : base()
         {
@@ -137,8 +42,7 @@ namespace treeFractalPoursuit
             BackColor = SystemColors.ControlDarkDark;
             AutoScroll = true;
             Width = largeur;
-            Height = hauteur;
-            
+            Height = hauteur;  
         }
 
         private void Redessiner(object sender, PaintEventArgs e)
@@ -176,6 +80,7 @@ namespace treeFractalPoursuit
                 DessinerBranche(gr,fLongueur * LongueurBrancheB);
             }
         }
+        //Random des longueurs des branches
         public float randomsLongueur()
         {
             double Longueur=0;
@@ -184,12 +89,14 @@ namespace treeFractalPoursuit
             Longueur *= (double)0.01;
             return (float)Longueur;
         }
+        //Random des angles des branches
         public float randomsAngles()
         {
             int Angle=0;
             Angle=rdn.Next(-3000,3000);
             return Angle;
         }
+        //Random des couleurs des branches
         private void Couleur()
         {
             int ValeurMaxDegrade = 255;
