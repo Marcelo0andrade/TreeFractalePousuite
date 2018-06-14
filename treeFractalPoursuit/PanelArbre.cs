@@ -161,7 +161,7 @@ namespace treeFractalPoursuit
         {
             Couleur();
             //Tourner,aller et dessiner
-            if (fLongueur > 22 - NiveauFeuille)
+            if (fLongueur > 24 - NiveauFeuille)
             {
               
                 Pen pen = new Pen(LinDeg, 8);
@@ -173,11 +173,12 @@ namespace treeFractalPoursuit
                 GraphicsState normal = gr.Save();
 
                 //branche droite dessin
-                gr.RotateTransform(AngleA);
+                gr.RotateTransform(Convert.ToInt32(Math.PI * AngleA));
                 DessinerBranche(gr, fLongueur * LongueurBrancheA);
+
                 //branche Gauche dessin
                 gr.Restore(normal);
-                gr.RotateTransform(AngleB);
+                gr.RotateTransform(Convert.ToInt32(Math.PI * AngleB));
                 DessinerBranche(gr, fLongueur * LongueurBrancheB);
             }
         }

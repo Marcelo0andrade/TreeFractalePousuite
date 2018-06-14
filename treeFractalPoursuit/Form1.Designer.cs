@@ -268,7 +268,6 @@
             // Fenetre
             // 
             this.Fenetre.Enabled = true;
-            this.Fenetre.Interval = 8;
             this.Fenetre.Tick += new System.EventHandler(this.Fenetre_Tick);
             // 
             // rbtnHiver
