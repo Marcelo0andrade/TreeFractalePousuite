@@ -47,8 +47,8 @@
             this.rbtnAutomne = new System.Windows.Forms.RadioButton();
             this.rbtnPrintemps = new System.Windows.Forms.RadioButton();
             this.rbtnEte = new System.Windows.Forms.RadioButton();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.btnAleatoire = new System.Windows.Forms.Button();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.nudAngleB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLongueurB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAngleA)).BeginInit();
@@ -261,9 +261,9 @@
             this.lblNomVersion.ForeColor = System.Drawing.SystemColors.Window;
             this.lblNomVersion.Location = new System.Drawing.Point(7, 85);
             this.lblNomVersion.Name = "lblNomVersion";
-            this.lblNomVersion.Size = new System.Drawing.Size(143, 25);
+            this.lblNomVersion.Size = new System.Drawing.Size(148, 25);
             this.lblNomVersion.TabIndex = 17;
-            this.lblNomVersion.Text = "By M.A. V1";
+            this.lblNomVersion.Text = "By M.A. V2";
             this.lblNomVersion.LocationChanged += new System.EventHandler(this.btnGenerer_Click);
             // 
             // Fenetre
@@ -321,16 +321,6 @@
             this.rbtnEte.Text = "Été";
             this.rbtnEte.UseVisualStyleBackColor = false;
             // 
-            // axWindowsMediaPlayer1
-            // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(12, 122);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(222, 64);
-            this.axWindowsMediaPlayer1.TabIndex = 19;
-            this.axWindowsMediaPlayer1.Visible = false;
-            // 
             // btnAleatoire
             // 
             this.btnAleatoire.ForeColor = System.Drawing.Color.Black;
@@ -341,6 +331,16 @@
             this.btnAleatoire.Text = "Aléatoire";
             this.btnAleatoire.UseVisualStyleBackColor = true;
             this.btnAleatoire.Click += new System.EventHandler(this.btnAleatoire_Click);
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(12, 122);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(222, 64);
+            this.axWindowsMediaPlayer1.TabIndex = 19;
+            this.axWindowsMediaPlayer1.Visible = false;
             // 
             // Form1
             // 

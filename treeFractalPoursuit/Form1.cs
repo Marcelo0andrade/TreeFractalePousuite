@@ -96,7 +96,7 @@ namespace treeFractalPoursuit
         private void Fenetre_Tick(object sender, EventArgs e)
         {
             //Gérer la fenêtre
-            lblNomVersion.Left = ClientRectangle.Width - 143;
+            lblNomVersion.Left = ClientRectangle.Width - 148;
             lblNomVersion.Top = ClientRectangle.Height - 25;
             arbre.Width = ClientRectangle.Width; 
             arbre.Height= ClientRectangle.Height;
