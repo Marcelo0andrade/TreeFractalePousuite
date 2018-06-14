@@ -48,6 +48,7 @@
             this.rbtnPrintemps = new System.Windows.Forms.RadioButton();
             this.rbtnEte = new System.Windows.Forms.RadioButton();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.btnAleatoire = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudAngleB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLongueurB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAngleA)).BeginInit();
@@ -116,7 +117,7 @@
             -2147483648});
             this.nudAngleB.Name = "nudAngleB";
             this.nudAngleB.Size = new System.Drawing.Size(100, 20);
-            this.nudAngleB.TabIndex = 2;
+            this.nudAngleB.TabIndex = 3;
             this.nudAngleB.Value = new decimal(new int[] {
             1000,
             0,
@@ -145,7 +146,7 @@
             65536});
             this.nudLongueurB.Name = "nudLongueurB";
             this.nudLongueurB.Size = new System.Drawing.Size(129, 20);
-            this.nudLongueurB.TabIndex = 3;
+            this.nudLongueurB.TabIndex = 4;
             this.nudLongueurB.Value = new decimal(new int[] {
             67,
             0,
@@ -173,7 +174,7 @@
             -2147483648});
             this.nudAngleA.Name = "nudAngleA";
             this.nudAngleA.Size = new System.Drawing.Size(100, 20);
-            this.nudAngleA.TabIndex = 0;
+            this.nudAngleA.TabIndex = 1;
             this.nudAngleA.Value = new decimal(new int[] {
             1000,
             0,
@@ -202,7 +203,7 @@
             65536});
             this.nudLongueurA.Name = "nudLongueurA";
             this.nudLongueurA.Size = new System.Drawing.Size(129, 20);
-            this.nudLongueurA.TabIndex = 1;
+            this.nudLongueurA.TabIndex = 2;
             this.nudLongueurA.Value = new decimal(new int[] {
             67,
             0,
@@ -215,8 +216,8 @@
             this.btnGenerer.ForeColor = System.Drawing.Color.Black;
             this.btnGenerer.Location = new System.Drawing.Point(12, 12);
             this.btnGenerer.Name = "btnGenerer";
-            this.btnGenerer.Size = new System.Drawing.Size(210, 70);
-            this.btnGenerer.TabIndex = 9;
+            this.btnGenerer.Size = new System.Drawing.Size(127, 70);
+            this.btnGenerer.TabIndex = 0;
             this.btnGenerer.Text = "Générer";
             this.btnGenerer.UseVisualStyleBackColor = true;
             this.btnGenerer.Click += new System.EventHandler(this.btnGenerer_Click);
@@ -236,7 +237,7 @@
             0});
             this.nudNiveau.Name = "nudNiveau";
             this.nudNiveau.Size = new System.Drawing.Size(120, 20);
-            this.nudNiveau.TabIndex = 4;
+            this.nudNiveau.TabIndex = 5;
             this.nudNiveau.Value = new decimal(new int[] {
             20,
             0,
@@ -278,7 +279,7 @@
             this.rbtnHiver.Location = new System.Drawing.Point(426, 65);
             this.rbtnHiver.Name = "rbtnHiver";
             this.rbtnHiver.Size = new System.Drawing.Size(50, 17);
-            this.rbtnHiver.TabIndex = 8;
+            this.rbtnHiver.TabIndex = 9;
             this.rbtnHiver.Text = "Hiver";
             this.rbtnHiver.UseVisualStyleBackColor = false;
             // 
@@ -291,7 +292,7 @@
             this.rbtnAutomne.Location = new System.Drawing.Point(353, 65);
             this.rbtnAutomne.Name = "rbtnAutomne";
             this.rbtnAutomne.Size = new System.Drawing.Size(67, 17);
-            this.rbtnAutomne.TabIndex = 7;
+            this.rbtnAutomne.TabIndex = 8;
             this.rbtnAutomne.TabStop = true;
             this.rbtnAutomne.Text = "Automne";
             this.rbtnAutomne.UseVisualStyleBackColor = false;
@@ -304,7 +305,7 @@
             this.rbtnPrintemps.Location = new System.Drawing.Point(229, 65);
             this.rbtnPrintemps.Name = "rbtnPrintemps";
             this.rbtnPrintemps.Size = new System.Drawing.Size(71, 17);
-            this.rbtnPrintemps.TabIndex = 5;
+            this.rbtnPrintemps.TabIndex = 6;
             this.rbtnPrintemps.Text = "Printemps";
             this.rbtnPrintemps.UseVisualStyleBackColor = false;
             // 
@@ -316,7 +317,7 @@
             this.rbtnEte.Location = new System.Drawing.Point(306, 65);
             this.rbtnEte.Name = "rbtnEte";
             this.rbtnEte.Size = new System.Drawing.Size(41, 17);
-            this.rbtnEte.TabIndex = 6;
+            this.rbtnEte.TabIndex = 7;
             this.rbtnEte.Text = "Été";
             this.rbtnEte.UseVisualStyleBackColor = false;
             // 
@@ -330,6 +331,17 @@
             this.axWindowsMediaPlayer1.TabIndex = 19;
             this.axWindowsMediaPlayer1.Visible = false;
             // 
+            // btnAleatoire
+            // 
+            this.btnAleatoire.ForeColor = System.Drawing.Color.Black;
+            this.btnAleatoire.Location = new System.Drawing.Point(145, 12);
+            this.btnAleatoire.Name = "btnAleatoire";
+            this.btnAleatoire.Size = new System.Drawing.Size(78, 70);
+            this.btnAleatoire.TabIndex = 10;
+            this.btnAleatoire.Text = "Aléatoire";
+            this.btnAleatoire.UseVisualStyleBackColor = true;
+            this.btnAleatoire.Click += new System.EventHandler(this.btnAleatoire_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,6 +349,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(842, 595);
+            this.Controls.Add(this.btnAleatoire);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.rbtnEte);
             this.Controls.Add(this.rbtnPrintemps);
@@ -390,6 +403,7 @@
         private System.Windows.Forms.RadioButton rbtnPrintemps;
         private System.Windows.Forms.RadioButton rbtnEte;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.Button btnAleatoire;
     }
 }
 

@@ -69,7 +69,9 @@ namespace treeFractalPoursuit
             arbre.Printemps = rbtnPrintemps.Checked;
             arbre.Automne = rbtnAutomne.Checked;
 
+            btnAleatoire.Enabled = false;
             Redimentionner();
+            btnAleatoire.Enabled = true;
         }
         //Donne le focus pour pouvoir faire Enter directement dans le bouton "générer"
         private void nudAngleB_ValueChanged(object sender, EventArgs e)
@@ -111,6 +113,17 @@ namespace treeFractalPoursuit
             arbre.AngleB = (float)nudAngleB.Value;
             arbre.AngleA = (float)nudAngleA.Value;
             arbre.NiveauFeuille = (float)nudNiveau.Value;
+        }
+
+        private void btnAleatoire_Click(object sender, EventArgs e)
+        {
+            nudAngleA.Value = Convert.ToDecimal(arbre.randomsAngles());
+            nudLongueurB.Value = Convert.ToDecimal(arbre.randomsLongueur());
+            nudLongueurA.Value = Convert.ToDecimal(arbre.randomsLongueur());
+            nudAngleB.Value = Convert.ToDecimal(arbre.randomsAngles());
+            btnAleatoire.Enabled = false;
+            Redimentionner();
+            btnAleatoire.Enabled = true;
         }
     }
 }

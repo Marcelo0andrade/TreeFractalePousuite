@@ -12,8 +12,7 @@ namespace treeFractalPoursuit
 {
     public class PanelArbre : Panel
     {
-        private float _longeurBrancheA;
-        private float _longeurBrancheB;
+        private float _longeurBrancheA, _longeurBrancheB;
         private float _angleA;
         private float _angleB;
         private float _NiveauFeuille;
@@ -22,6 +21,7 @@ namespace treeFractalPoursuit
         private bool _Automne;
         private bool _Printemps; 
         LinearGradientBrush LinDeg;
+        Random rdn = new Random();
         public bool Hiver
         {
             get
@@ -182,18 +182,19 @@ namespace treeFractalPoursuit
                 DessinerBranche(gr,fLongueur * LongueurBrancheB);
             }
         }
-        public float randomsAngles(float Angle)
+        public float randomsLongueur()
         {
-            Random rdn = new Random();
+            double Longueur=0;
+            
+            Longueur = rdn.Next(10, 80);
+            Longueur *= (double)0.01;
+            return (float)Longueur;
+        }
+        public float randomsAngles()
+        {
+            int Angle=0;
             Angle=rdn.Next(-3000,3000);
             return Angle;
-        }
-        public float randomsLongueur(float Longueur)
-        {
-            Random rdn = new Random();
-            Longueur = rdn.Next(10, 80);
-            Longueur *= (float)0.10;
-            return Longueur;
         }
         private void Couleur()
         {
