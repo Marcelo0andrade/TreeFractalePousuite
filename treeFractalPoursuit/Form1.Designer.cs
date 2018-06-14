@@ -105,12 +105,12 @@
             0});
             this.nudAngleB.Location = new System.Drawing.Point(471, 38);
             this.nudAngleB.Maximum = new decimal(new int[] {
-            180,
+            3000,
             0,
             0,
             0});
             this.nudAngleB.Minimum = new decimal(new int[] {
-            180,
+            3000,
             0,
             0,
             -2147483648});
@@ -118,7 +118,7 @@
             this.nudAngleB.Size = new System.Drawing.Size(100, 20);
             this.nudAngleB.TabIndex = 2;
             this.nudAngleB.Value = new decimal(new int[] {
-            30,
+            1000,
             0,
             0,
             0});
@@ -162,12 +162,12 @@
             0});
             this.nudAngleA.Location = new System.Drawing.Point(229, 38);
             this.nudAngleA.Maximum = new decimal(new int[] {
-            180,
+            3000,
             0,
             0,
             0});
             this.nudAngleA.Minimum = new decimal(new int[] {
-            180,
+            3000,
             0,
             0,
             -2147483648});
@@ -175,7 +175,7 @@
             this.nudAngleA.Size = new System.Drawing.Size(100, 20);
             this.nudAngleA.TabIndex = 0;
             this.nudAngleA.Value = new decimal(new int[] {
-            30,
+            1000,
             0,
             0,
             -2147483648});

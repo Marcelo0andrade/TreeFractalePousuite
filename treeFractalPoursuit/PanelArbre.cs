@@ -173,14 +173,27 @@ namespace treeFractalPoursuit
                 GraphicsState normal = gr.Save();
 
                 //branche droite dessin
-                gr.RotateTransform(Convert.ToInt32(Math.PI * AngleA));
+                gr.RotateTransform(Convert.ToInt32(Math.PI * AngleA/180));
                 DessinerBranche(gr, fLongueur * LongueurBrancheA);
 
                 //branche Gauche dessin
                 gr.Restore(normal);
-                gr.RotateTransform(Convert.ToInt32(Math.PI * AngleB));
-                DessinerBranche(gr, fLongueur * LongueurBrancheB);
+                gr.RotateTransform(Convert.ToInt32(Math.PI * AngleB / 180));
+                DessinerBranche(gr,fLongueur * LongueurBrancheB);
             }
+        }
+        public float randomsAngles(float Angle)
+        {
+            Random rdn = new Random();
+            Angle=rdn.Next(-3000,3000);
+            return Angle;
+        }
+        public float randomsLongueur(float Longueur)
+        {
+            Random rdn = new Random();
+            Longueur = rdn.Next(10, 80);
+            Longueur *= (float)0.10;
+            return Longueur;
         }
         private void Couleur()
         {
