@@ -106,7 +106,7 @@ namespace treeFractalPoursuit
         public float randomsAngles()
         {
             int Angle=0;
-            Angle=rnd.Next(-3000,3000);
+            Angle=rnd.Next(-6000,6000);
             return Angle;
         }
         /// <summary>
@@ -114,42 +114,42 @@ namespace treeFractalPoursuit
         /// </summary>
         private void Couleur()
         {
-            int ValeurMaxDegrade = 255;
+            const int VALEURMAXDEGRES = 256;
             int Rouge;
             int Vert;
             int Bleu;
             
             //Faire un dégradé
-            int iX = rnd.Next(1, ValeurMaxDegrade);
+            int iX = rnd.Next(1, VALEURMAXDEGRES);
             if (Hiver)
             {
                 Rouge = 0;
-                Vert = iX * 165 / ValeurMaxDegrade;
+                Vert = iX * 165 / VALEURMAXDEGRES;
                 Bleu = 255;
             }
             else if (Ete)
             {
                 Rouge = 10;
                 Vert = 200;
-                Bleu = iX * 165 / ValeurMaxDegrade;
+                Bleu = iX * 165 / VALEURMAXDEGRES;
                 
             }
             else if (Automne)
             {
                 Rouge = 255;
-                Vert = iX * 165 / ValeurMaxDegrade;
+                Vert = iX * 165 / VALEURMAXDEGRES;
                 Bleu = 0;
             }
             else if (Printemps)
             {
-                Rouge = iX * 165 / ValeurMaxDegrade;
+                Rouge = iX * 165 / VALEURMAXDEGRES;
                 Vert = 0;
                 Bleu = 200;
             }
             else
             {
                 Rouge = 255;
-                Vert = iX * 165 / ValeurMaxDegrade;
+                Vert = iX * 165 / VALEURMAXDEGRES;
                 Bleu = 0;
             }
 
