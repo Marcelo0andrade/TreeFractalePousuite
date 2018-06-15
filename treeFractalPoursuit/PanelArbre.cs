@@ -96,7 +96,7 @@ namespace treeFractalPoursuit
         {
             double Longueur=0;
             
-            Longueur = rnd.Next(10, 80);
+            Longueur = rnd.Next(10, 70);
             Longueur *= (double)0.01;
             return (float)Longueur;
         }
